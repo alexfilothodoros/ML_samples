@@ -1,0 +1,10 @@
+python-dotenv
+langchain==0.0.142
+streamlit==1.26.0
+PyPDF2
+openai
+python-dotenv
+tiktoken
+faiss-cpu
+chromadb==0.3.29
+pip install pypdf

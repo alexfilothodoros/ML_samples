@@ -1,4 +1,3 @@
-# https://github.com/mehmetba/pdf-analyze-streamlit/blob/main/qa_app.py
 import os
 import PyPDF2
 import streamlit as st

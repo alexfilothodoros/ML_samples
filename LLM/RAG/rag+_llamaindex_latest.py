@@ -11,7 +11,6 @@ from llama_index.core import (
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-print(OPENAI_API_KEY)
 
 documents = SimpleDirectoryReader("data").load_data()
 index = VectorStoreIndex.from_documents(documents)
@@ -19,10 +18,6 @@ query_engine = index.as_query_engine()
 query = "Does the license allow me to use the software commercially?"
 response = query_engine.query(query)
 print(response)
-
-
-index.storage_context.persist()
-
 
 PERSIST_DIR = "./storage"
 if not os.path.exists(PERSIST_DIR):

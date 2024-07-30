@@ -57,7 +57,7 @@ Settings.prompt_helper = prompt_helper
 
 index = VectorStoreIndex.from_documents(documents)
 
-    "We have provided context information below. \n"
+template = ("We have provided context information below. \n"
     "---------------------\n"
     "{context_str}"
     "\n---------------------\n"

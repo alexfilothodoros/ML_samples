@@ -7,4 +7,4 @@ python-dotenv
 tiktoken
 faiss-cpu
 chromadb==0.3.29
-pip install pypdf
+pypdf
